@@ -18,7 +18,7 @@ use Roots\Sage\Wrapper;
       do_action('get_header');
       get_template_part('templates/header');
     ?>
-    <div class="wrap container uk-container" role="document">
+    <div class="wrap container uk-container uk-container-center" role="document">
       <div class="content uk-grid">
         <main class="main">
           <?php include Wrapper\template_path(); ?>
