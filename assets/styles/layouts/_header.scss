@@ -2,3 +2,12 @@
 	@extend .uk-navbar-nav;
 	@extend .uk-hidden-small;
 }
+
+#sidemenu .uk-nav{
+	padding-top: 4em;
+	padding-left: 2em;
+	li {
+		padding-bottom: 1em;
+		font-size: 1.2em;
+	}
+}
