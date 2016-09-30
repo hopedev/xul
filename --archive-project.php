@@ -1,10 +1,5 @@
 <?php get_template_part('templates/page', 'header'); ?>
 
-
-<?php if (is_post_type_archive('project')) $class= "uk-grid uk-grid-width-1-1 uk-grid-width-medium-1-4";
-?>
-<div class="thecontent <?php echo $class ?>">
-
 <?php if (!have_posts()) : ?>
   <div class="alert alert-warning">
     <?php _e('Sorry, no results were found.', 'sage'); ?>
@@ -17,5 +12,3 @@
 <?php endwhile; ?>
 
 <?php the_posts_navigation(); ?>
-
-</div>

@@ -7,7 +7,7 @@
 
 ?>
 
-<ul class="uk-slideshow" data-uk-slideshow="{autoplay:true, animation: 'swipe'}">
+<ul class="uk-slideshow" data-uk-slideshow="{autoplay:true, animation: 'swipe'}" >
 
 
 <?php
@@ -22,12 +22,7 @@
         
         // Thumbnail field returns image ID, so grab image. If none provided, use default image
          $image =   wp_get_attachment_url( $image ) ;
-         echo '<li title="' . $link . '"> <img src="' .  $image  .  '" width="" height="" alt="' . $title . '">';
-         echo '<div class="uk-overlay-panel uk-flex uk-flex-center uk-flex-middle uk-text-center">';
-            echo '<div><p> '. $slideshow_name . '</p>';
-            echo '<h3> '. get_the_title($link) . '</h3>';            
-            echo '</div></div>';
-         echo '</li>';
+         echo '<li title="' . $link . '"> <img src="' .  $image  .  '" width="" height="" alt="' . $title . '"></li>';
       }
 
     } 

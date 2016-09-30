@@ -13,8 +13,7 @@
     "uikit": {
       "main": [
       "./js/uikit.js",
-      "./js/components/accordion.js",
-      "./js/components/autocomplete.js"
+      "./js/components/slideshow.js"
       ]
     }
   }

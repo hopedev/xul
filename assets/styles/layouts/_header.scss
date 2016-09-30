@@ -3,11 +3,7 @@
 	@extend .uk-hidden-small;
 }
 
-#sidemenu .uk-nav{
+#sidemenu .menu-main-navigation-container > .uk-nav{ // only main ul, not any submenu's
 	padding-top: 4em;
-	padding-left: 2em;
-	li {
-		padding-bottom: 1em;
-		font-size: 1.2em;
-	}
+	padding-left: 2em;	
 }

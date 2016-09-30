@@ -7,7 +7,7 @@
         <nav class="uk-offcanvas-bar">
           <?php
           if (has_nav_menu('primary_navigation')) :
-            wp_nav_menu(['theme_location' => 'primary_navigation', 'items_wrap' => '<ul class="uk-nav uk-nav-offcanvas" data-uk-nav>%3$s</ul>']);
+            wp_nav_menu(['theme_location' => 'primary_navigation', 'items_wrap' => '<ul class="uk-nav uk-nav-offcanvas" data-uk-nav>%3$s</ul>','walker' => new Walker_UIKIT_offCanvas() ]);
           endif;
           ?>
     
