@@ -19,6 +19,17 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+        // init Isotope
+        var $grid = $('.isogrid').isotope({
+          // options
+             itemSelector: '.iso-item',
+             "masonry": { "columnWidth": 330 }
+        });
+        // filter items on button click
+        $('.filter-button-group').on( 'click', 'button', function() {
+          var filterValue = $(this).attr('data-filter');
+          $grid.isotope({ filter: filterValue });
+        });
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

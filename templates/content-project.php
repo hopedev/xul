@@ -1,4 +1,5 @@
-<article <?php post_class(); //grid item ?>> 
+<article <?php post_class('iso-item' ); //grid item ?> >
+
 <div  class="uk-panel">
 	<div class="uk-overlay uk-overlay-hover">
 

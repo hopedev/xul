@@ -7,14 +7,21 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "uikit": "^2.25.0"
+    "uikit": "^2.25.0",
+    "isotope": "^3.0.1"
   },
   "overrides": {
     "uikit": {
       "main": [
-      "./js/uikit.js",
-      "./js/components/slideshow.js"
+        "./js/uikit.js",
+        "./js/components/slideshow.js"
       ]
+    }, 
+    "isotope": {
+      "main": ["./dist/isotope.pkgd.min.js"],
+      "dependencies": {}
     }
   }
 }
+
+
