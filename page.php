@@ -5,19 +5,19 @@
 
    <div class="">
 	   	<div class="uk-grid uk-grid-collapse  uk-grid-width-1-1 uk-grid-width-medium-1-2">
-		   	<div >
+		   	<div class="leftslider">
 
 		   <?php // Left side slider, top on mob
 		   	$slideshow_name =  'main_slider_l';
-			include(locate_template('templates/partial-header-slideshow.php')); 
+			include(locate_template('templates/partial-header-flexslider.php')); 
 		   ?> 
 
 		   </div>
 
-			<div >
+			<div  class="rightslider">
 		   <?php // Right side slider, bottom on mob
 		   	$slideshow_name =  'main_slider_r';
-			include(locate_template('templates/partial-header-slideshow.php')); 
+			include(locate_template('templates/partial-header-flexslider.php')); 
 		   
 		   ?> 
 			

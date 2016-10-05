@@ -39,6 +39,23 @@
     'home': {
       init: function() {
         // JavaScript to be fired on the home page
+        // FlexSlider setup using custom selector
+        $(".leftslider .flexslider").flexslider({
+           animation: "slide" ,
+            direction: "vertical" //,
+           // animationLoop: true,
+           // smoothHeight: true,
+           // slideshow: true
+        });
+        $(".rightslider .flexslider").flexslider({
+           animation: "slide", 
+           reverse: true ,
+            direction: "vertical" //,
+           // animationLoop: true,
+           // smoothHeight: true,
+           // slideshow: true
+        });
+
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
