@@ -13,49 +13,43 @@ body { margin: 0 1em; }
          overflow: hidden;
 }
 
+// Make new animations for simple up/down, no fade
+// Homepage X animation
 
-
-/* Keyframes: Slide
- * Used by slideshow component
- ========================================================================== */
-/*
- * Left
-
-@-webkit-keyframes uk-slide-up {
+@include keyframes(slideUp) {
   0% {
-    -webkit-transform: translateY(-100%);
+    @include transform(translateY(0));
   }
   100% {
-    -webkit-transform: translateY(0);
+    @include transform(translateY(-100px));
   }
 }
-@keyframes uk-slide-up {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
- */
 
-/*
- * Right
+@mixin slideUp($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(slideUp);
+  @include count($count);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
+}
 
-@-webkit-keyframes uk-slide-down {
+@include keyframes(slideDown) {
   0% {
-    -webkit-transform: translateY(100%);
+    @include transform(translateY(0));
   }
   100% {
-    -webkit-transform: translateY(0);
+    @include transform(translateY(100px));
   }
 }
-@keyframes uk-slide-down {
-  0% {
-    transform: translateY(100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
+
+@mixin slideDown($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(slideDown);
+  @include count($count);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
 }
- */

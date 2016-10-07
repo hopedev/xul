@@ -21,8 +21,8 @@
 		</div> <!-- close grid -->
 
 <div class="uk-nbfc uk-container-center slidetest">
-<div class="uk-panel uk-panel-box uk-animation-reverse uk-animation-slide-top uk-animation-15 uk-container-center" style="z-index:100; min-height: 40px; width:100px; opacity: 1 !important">Slide up</div>
-<div class="uk-panel uk-panel-box uk-animation-reverse uk-animation-slide-bottom uk-animation-15 uk-container-center" style="z-index:100; min-height: 40px; width:100px; opacity: 1 !important">Slide up</div>
+	<div class="slideup uk-panel uk-panel-box  uk-container-center" style="z-index:100; min-height: 40px; width:100px;">Slide up</div>
+	<div class="slidedown uk-panel uk-panel-box  uk-container-center" style="z-index:100; min-height: 40px; width:100px;">Slide Down</div>
 </div>
 
    </div>
