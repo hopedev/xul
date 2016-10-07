@@ -22,7 +22,7 @@
           
           // Thumbnail field returns image ID, so grab image. If none provided, use default image
            $image =   wp_get_attachment_url( $image ) ;
-           echo '<li title="' . $link . '" class="tab"> <img src="' .  $image  .  '" width="" height="" alt="' . $title . '"></li>';
+           echo '<li title="' . $title . '" class="tab"> <img src="' .  $image  .  '"  alt="' . $title . '"></li>';
         }
 
       } 

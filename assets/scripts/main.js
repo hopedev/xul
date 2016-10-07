@@ -19,17 +19,6 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
-        // init Isotope
-        var $grid = $('.isogrid').isotope({
-          // options
-             itemSelector: '.iso-item',
-             "masonry": { "columnWidth": 330 }
-        });
-        // filter items on button click
-        $('.filter-button-group').on( 'click', 'button', function() {
-          var filterValue = $(this).attr('data-filter');
-          $grid.isotope({ filter: filterValue });
-        });
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
@@ -42,18 +31,22 @@
         // FlexSlider setup using custom selector
         $(".leftslider .flexslider").flexslider({
            animation: "slide" ,
-            direction: "vertical" //,
-           // animationLoop: true,
-           // smoothHeight: true,
-           // slideshow: true
+            direction: "vertical" ,
+           animationLoop: true,
+            smoothHeight: true,
+            slideshow: true,
+            controlNav: false,
+            directionNav: false
         });
         $(".rightslider .flexslider").flexslider({
            animation: "slide", 
            reverse: true ,
-            direction: "vertical" //,
-           // animationLoop: true,
-           // smoothHeight: true,
-           // slideshow: true
+            direction: "vertical" ,
+            animationLoop: true,
+            smoothHeight: true,
+           slideshow: true,
+            controlNav: false,
+            directionNav: false
         });
 
       },

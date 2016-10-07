@@ -3,26 +3,27 @@
 
    if (is_front_page() || is_page('the-team')){ ?>
 
-   <div class="">
-	   	<div class="uk-grid uk-grid-collapse  uk-grid-width-1-1 uk-grid-width-medium-1-2">
+   <div class="hometopsection">
+	   	<div class="uk-grid uk-grid-collapse  uk-grid-width-1-1 uk-grid-width-medium-1-2 uk-clearfix">
 		   	<div class="leftslider">
-
-		   <?php // Left side slider, top on mob
-		   	$slideshow_name =  'main_slider_l';
-			include(locate_template('templates/partial-header-flexslider.php')); 
-		   ?> 
-
+			   <?php // Left side slider, top on mob
+			   	$slideshow_name =  'main_slider_l';
+				include(locate_template('templates/partial-header-flexslider.php')); 
+			   ?> 
 		   </div>
 
 			<div  class="rightslider">
-		   <?php // Right side slider, bottom on mob
-		   	$slideshow_name =  'main_slider_r';
-			include(locate_template('templates/partial-header-flexslider.php')); 
-		   
-		   ?> 
-			
-		   </div>
-		</div>
+			   <?php // Right side slider, bottom on mob
+			   	$slideshow_name =  'main_slider_r';
+				include(locate_template('templates/partial-header-flexslider.php')); 		   
+			   ?> 
+		   </div>		   	
+		</div> <!-- close grid -->
+
+<div class="uk-nbfc uk-container-center slidetest">
+<div class="uk-panel uk-panel-box uk-animation-reverse uk-animation-slide-top uk-animation-15 uk-container-center" style="z-index:100; min-height: 40px; width:100px; opacity: 1 !important">Slide up</div>
+<div class="uk-panel uk-panel-box uk-animation-reverse uk-animation-slide-bottom uk-animation-15 uk-container-center" style="z-index:100; min-height: 40px; width:100px; opacity: 1 !important">Slide up</div>
+</div>
 
    </div>
 	<?php } ?>

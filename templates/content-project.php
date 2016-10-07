@@ -1,4 +1,9 @@
-<article <?php post_class('iso-item' ); //grid item ?> >
+<?php  //Returns Array of Term Names for "my_taxonomy"
+$term_list = wp_get_post_terms($post->ID, 'project_type', array("fields" => "slugs"));
+$filter= $term_list[0];
+?>
+
+<article <?php post_class(); //grid item ?> data-uk-filter="<?php  echo $filter; ?>" >
 
 <div  class="uk-panel">
 	<div class="uk-overlay uk-overlay-hover">
