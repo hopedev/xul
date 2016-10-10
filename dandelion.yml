@@ -1,0 +1,40 @@
+adapter: sftp
+host: shell.gridhost.co.uk
+username: hopedeva
+password: sjw2fytdv9y8pxic
+path: //var/sites/h/hopedev.agency/subdomains/xul/wp-content/
+
+exclude:
+    - .gitignore    
+    - index.php
+    - dandelion.yml
+    - dir/
+    - themes/xul-hope/.bowerrc
+    - themes/xul-hope/.editorconfig
+    - themes/xul-hope/.github/
+    - themes/xul-hope/.gitignore
+    - themes/xul-hope/.jscsrc
+    - themes/xul-hope/.jshintrc
+    - themes/xul-hope/.travis.yml
+    - themes/xul-hope/.editorconfig
+    - themes/xul-hope/.github/
+    - themes/xul-hope/.gitignore
+    - themes/xul-hope/.jscsrc
+    - themes/xul-hope/.jshintrc
+    - themes/xul-hope/.travis.yml
+    - themes/xul-hope/bower_components
+    - themes/xul-hope/node_modules
+    - themes/xul-hope/npm-debug.log
+    - themes/xul-hope/vendor
+    - themes/twentysixteen/*
+    - themes/index.php
+    - themes/composer.phar
+    - themes/npm-debug.log
+    - plugins/*
+    - languages/*
+    - upgrade/*
+    - uploads/*
+
+
+additional:
+    - themes/xul-hope/dist/

@@ -3,7 +3,7 @@
 
    if (is_front_page() || is_page('the-team')){ ?>
 
-   <div class="hometopsection">
+   <div class="hometopsection uk-vertical-align">
 	   	<div class="uk-grid uk-grid-collapse  uk-grid-width-1-1 uk-grid-width-medium-1-2 uk-clearfix">
 		   	<div class="leftslider">
 			   <?php // Left side slider, top on mob
@@ -20,12 +20,12 @@
 		   </div>		   	
 		</div> <!-- close grid -->
 
-<div class="uk-nbfc uk-container-center slidetest">
-	<div class="slideup uk-panel uk-panel-box  uk-container-center" style="z-index:100; min-height: 40px; width:100px;">Slide up</div>
-	<div class="slidedown uk-panel uk-panel-box  uk-container-center" style="z-index:100; min-height: 40px; width:100px;">Slide Down</div>
-</div>
+		<div class="uk-nbfc uk-container-center slidetest uk-vertical-align-middle">
+			<div class="slideup uk-panel uk-panel-box  uk-container-center" style="z-index:100; min-height: 40px; width:100px;">Slide up</div>
+			<div class="slidedown uk-panel uk-panel-box  uk-container-center" style="z-index:100; min-height: 40px; width:100px;">Slide Down</div>
+		</div>
 
-   </div>
+   </div> <!-- end hometopsection -->
 	<?php } ?>
 
 

@@ -9,7 +9,7 @@ themes/twentysixteen/*
 themes/index.php
 themes/composer.phar
 themes/npm-debug.log
-plugins/
+plugins/*
 languages/*
 upgrade/*
 uploads/*
